@@ -1,0 +1,12 @@
+[package]
+name = "coca-zero"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+coca = { git = "https://github.com/andrewwhitehead/coca", branch = "feat/realloc" }
+zeroize = "1.4"
+
+[features]
+default = []
+alloc = ["coca/alloc"]
